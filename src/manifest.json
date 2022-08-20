@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Links",
+  "description": "Web extension that helps navigate thought the internet easily",
+  "version": "0.0.1",
+  "icons": {},
+  "background": {
+    "service_worker": "background.ts",
+    "type": "module"
+  }
+}

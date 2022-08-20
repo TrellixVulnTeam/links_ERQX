@@ -1,0 +1,44 @@
+{
+  "name": "links",
+  "version": "0.0.1",
+  "description": "Web extension that helps navigate thought the internet easily",
+  "author": "Vasyl Romanchak",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel watch src/manifest.json --host localhost",
+    "build": "parcel build src/manifest.json"
+  },
+  "targets": {
+    "webext-dev": {
+      "sourceMap": {
+        "inline": true,
+        "inlineSources": true
+      }
+    },
+    "webext-prod": {}
+  },
+  "devDependencies": {
+    "@parcel/bundler-default": "^2.7.0",
+    "@parcel/compressor-raw": "^2.7.0",
+    "@parcel/config-webextension": "^2.7.0",
+    "@parcel/core": "^2.7.0",
+    "@parcel/namer-default": "^2.7.0",
+    "@parcel/optimizer-terser": "^2.7.0",
+    "@parcel/packager-js": "^2.7.0",
+    "@parcel/packager-webextension": "^2.7.0",
+    "@parcel/resolver-default": "^2.7.0",
+    "@parcel/runtime-browser-hmr": "^2.7.0",
+    "@parcel/runtime-js": "^2.7.0",
+    "@parcel/runtime-react-refresh": "^2.7.0",
+    "@parcel/runtime-service-worker": "^2.7.0",
+    "@parcel/runtime-webextension": "^2.7.0",
+    "@parcel/transformer-babel": "^2.7.0",
+    "@parcel/transformer-js": "^2.7.0",
+    "@parcel/transformer-json": "^2.7.0",
+    "@parcel/transformer-react-refresh-wrap": "^2.7.0",
+    "@parcel/transformer-webextension": "^2.7.0",
+    "parcel": "^2.0.0-rc.0",
+    "typescript": "^4.7.4"
+  },
+  "packageManager": "yarn@3.2.2"
+}
